@@ -12,6 +12,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: mycluster.9yk9p.mongodb.net
       MONGODB_USERNAME: sneha
       MONGODB_PASSWORD: root@123
+      MONGODB_APPNAME: myCluster
       PORT: 9090
     runs-on: ubuntu-latest
     steps:
