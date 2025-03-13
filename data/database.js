@@ -25,6 +25,7 @@
 // export default database;
 
 
+import { MongoClient } from 'mongodb';
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
@@ -56,3 +57,4 @@ async function run() {
   }
 }
 run().catch(console.dir);
+export default database;
