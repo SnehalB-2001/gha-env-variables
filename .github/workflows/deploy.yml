@@ -9,7 +9,7 @@ env:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster1.9yk9p.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: mycluster.9yk9p.mongodb.net
       MONGODB_USERNAME: sneha
       MONGODB_PASSWORD: root@123
       PORT: 9090
@@ -41,5 +41,5 @@ jobs:
     steps:
       - name: Output information
         run: |        
-          echo "MONGODB_USERNAME: ${{env.MONGODB_USERNAME}}"
+          echo "MONGODB_USERNAME: $env.MONGODB_USERNAME"
           echo "MONGODB_DB_NAME: $MONGODB_DB_NAME"
